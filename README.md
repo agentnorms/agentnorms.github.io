@@ -1,6 +1,8 @@
-# AgentNorm academic website
+# AgentNorm Research Group
 
-Static academic site for https://agentnorms.github.io/.
+Independent public-interest research on AI evaluation, statistical verification, and decision science. Shuo Li Liu is Principal Investigator at AgentNorm.
+
+Academic site: https://agentnorms.github.io/.
 
 The site presents Shuo Li Liu and research collaborators, publications, workshop papers, working papers, and research software. Journal articles, letters, proceedings abstracts, edited reports, and non-archival workshop posters are labeled separately. Working projects do not imply acceptance or publication.
 
