@@ -4,7 +4,9 @@ Independent public-interest research on AI evaluation, statistical verification,
 
 Academic site: https://agentnorms.github.io/.
 
-The site presents Shuo Li Liu and research collaborators, publications, workshop papers, working papers, and research software. Journal articles, letters, proceedings abstracts, edited reports, and non-archival workshop posters are labeled separately. Working projects do not imply acceptance or publication.
+Principal Investigator profile: https://agentnorms.github.io/shuo-li-liu.html. The profile includes selected publications, research directions, mentorship, academic background, and structured metadata matching the visible page.
+
+The site presents Shuo Li Liu and research collaborators, publications, workshop papers, working papers, and research software. Journal articles, letters, proceedings abstracts, edited reports, and peer-reviewed workshop posters are labeled separately. Working projects do not imply acceptance or publication.
 
 Publish this directory at the root of the public `agentnorms/agentnorms.github.io` repository. In repository Settings → Pages, select **Deploy from a branch**, **main**, **/ (root)**. GitHub Pages provides static hosting and HTTPS.
 
