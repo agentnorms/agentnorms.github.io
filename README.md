@@ -1,6 +1,6 @@
-# AgentNorm Decision Science Group
+# AgentNorm Research Institute
 
-Research in mathematical decision theory through axioms, representation theorems, proofs, and counterexamples, with applications to economics and AI evaluation. Shuo Li Liu is Principal Investigator at AgentNorm.
+An independent research initiative with a public-interest mission: mathematical research, open scholarship, and student mentorship. Research in mathematical decision theory through axioms, representation theorems, proofs, and counterexamples, with applications to economics and AI evaluation. Shuo Li Liu is Principal Investigator at AgentNorm.
 
 Academic site: https://agentnorms.github.io/.
 
