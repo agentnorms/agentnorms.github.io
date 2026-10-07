@@ -1,6 +1,6 @@
-# AgentNorm Research Group
+# AgentNorm Decision Science Group
 
-Independent public-interest research on AI evaluation, statistical verification, and decision science. Shuo Li Liu is Principal Investigator at AgentNorm.
+Independent public-interest research in mathematical decision theory, uncertainty, judgment aggregation, and AI evaluation. Shuo Li Liu is Principal Investigator at AgentNorm.
 
 Academic site: https://agentnorms.github.io/.
 
