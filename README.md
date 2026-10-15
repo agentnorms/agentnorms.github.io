@@ -14,6 +14,6 @@ The interactive version remains at https://normativeai.mywire.org/. The public c
 
 This directory contains public website files only. Private correspondence, source CVs, and research verification notes must not be uploaded.
 
-Legal identity: AgentNorm is the public research identity of NORMATIVE AI INSTITUTE INC., a British Columbia corporation (company no. 1449218). See the [BC Corporate Registry notice](https://www.bclaws.gov.bc.ca/civix/document/id/corpreg/corpreg/crpn0514fin0326). This corporate record does not by itself establish charitable or nonprofit registration.
+Legal identity: AgentNorm is the public research identity of NORMATIVE AI INSTITUTE INC., a British Columbia corporation (company no. 1449218). See the [OrgBook BC company profile](https://orgbook.gov.bc.ca/entity/BC1449218/type/registration.registries.ca). This corporate record does not by itself establish charitable or nonprofit registration.
 
 Grant acknowledgement: We gratefully acknowledge a $20,000 grant from the [Corrigibility Research Fund](https://corrigibilityresearch.org/) supporting CAST Decision Theory by Xuanyi Wang and Shuo Li Liu. The fund is a program of Lightcone Infrastructure Inc.; applications are coordinated through [Lightcone Commons](https://www.lightconecommons.com/).
