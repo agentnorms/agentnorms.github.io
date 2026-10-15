@@ -1,6 +1,6 @@
 # AgentNorm Research Institute
 
-An independent research initiative with a public-interest mission: mathematical research, open scholarship, and student mentorship. Research in mathematical decision theory through axioms, representation theorems, proofs, and counterexamples, with applications to economics and the evaluation of agentic risk. Shuo Li Liu coordinates AgentNorm’s research programme.
+An independent research initiative with a public-interest mission: mathematical research, open scholarship, and student mentorship. Research in mathematical decision theory through axioms, representation theorems, proofs, and counterexamples, with applications to economics, decision theory for agentic risk, corrigibility, and AI risk measurement and assurance. Shuo Li Liu coordinates AgentNorm’s research programme.
 
 Academic site: https://agentnorm.tech/.
 
