@@ -10,6 +10,6 @@ The site presents Shuo Li Liu and research collaborators, publications, workshop
 
 Publish this directory at the root of the public `agentnorms/agentnorms.github.io` repository. In repository Settings → Pages, select **Deploy from a branch**, **main**, **/ (root)**. GitHub Pages provides static hosting and HTTPS.
 
-The interactive version remains at https://normativeai.mywire.org/. The contact address is admin@normativeai.mywire.org; email forwarding is managed separately and must remain enabled.
+The interactive version remains at https://normativeai.mywire.org/. The public contact address is admin@agentnorm.tech. The existing normativeai.mywire.org forwarding remains enabled separately.
 
 This directory contains public website files only. Private correspondence, source CVs, and research verification notes must not be uploaded.
