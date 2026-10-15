@@ -1,10 +1,10 @@
 # AgentNorm Research Institute
 
-An independent research initiative with a public-interest mission: mathematical research, open scholarship, and student mentorship. Research in mathematical decision theory through axioms, representation theorems, proofs, and counterexamples, with applications to economics and the evaluation of agentic risk. Shuo Li Liu is Principal Investigator at AgentNorm.
+An independent research initiative with a public-interest mission: mathematical research, open scholarship, and student mentorship. Research in mathematical decision theory through axioms, representation theorems, proofs, and counterexamples, with applications to economics and the evaluation of agentic risk. Shuo Li Liu coordinates AgentNorm’s research programme.
 
 Academic site: https://agentnorm.tech/.
 
-Principal Investigator profile: https://agentnorm.tech/shuo-li-liu.html. The profile includes selected mathematical papers, research directions, mentorship, academic background, and structured metadata matching the visible page.
+Research profile: https://agentnorm.tech/shuo-li-liu.html. The profile includes selected mathematical papers, research directions, mentorship, academic background, and structured metadata matching the visible page.
 
 The site presents Shuo Li Liu and research collaborators, publications, workshop papers, working papers, and research software. Journal articles, letters, proceedings abstracts, edited reports, and peer-reviewed workshop posters are labeled separately. Working projects do not imply acceptance or publication.
 
