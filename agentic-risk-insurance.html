@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foundations for Agentic Risk, Actuarial Science, and Insurance | AgentNorm</title><meta name="description" content="Decision theory under uncertainty connects AI evaluation, actuarial loss modeling, insurance pricing, and collective safety finance. Research and results from the v12 AI insurance draft.">
+<link rel="canonical" href="https://agentnorm.tech/agentic-risk-insurance.html"><meta property="og:type" content="article"><meta property="og:title" content="Foundations for Agentic Risk, Actuarial Science, and Insurance"><meta property="og:description" content="Decision theory under uncertainty connects AI evaluation, actuarial loss modeling, insurance pricing, and collective safety finance. Research and results from the v12 AI insurance draft."><meta property="og:url" content="https://agentnorm.tech/agentic-risk-insurance.html">
+<style>
+:root{color-scheme:light;--ink:#202630;--blue:#1c3a63;--muted:#566170;--line:#d9dfe7;--paper:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:2rem}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--blue);text-underline-offset:.18em;text-decoration-thickness:1px}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.wrap{max-width:1080px;margin:auto;padding:0 42px}.skip{position:absolute;left:20px;top:-100px;padding:8px;background:white}.skip:focus{top:8px}
+header{border-top:5px solid var(--blue);border-bottom:1px solid var(--line)}.masthead{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:2rem;padding-top:24px;padding-bottom:24px}.wordmark{flex-shrink:0;max-width:100%;font:700 27px/1.2 Georgia,"Times New Roman",serif;text-decoration:none;letter-spacing:-.02em}.wordmark small{display:block;font:13px/1.5 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin-top:8px;color:var(--muted)}nav{display:flex;gap:24px;flex-wrap:wrap;font-size:15px}nav a{text-decoration:none}nav a:hover{text-decoration:underline}
+main.wrap{padding-top:58px;padding-bottom:30px}h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;color:var(--ink);font-weight:500}h1{font-size:clamp(30px,4vw,43px);line-height:1.2;letter-spacing:-.025em;max-width:790px;margin:0 0 26px}h2{font-size:28px;line-height:1.3;margin:0}p{margin:0 0 1rem}.intro{max-width:810px;font-size:19px;line-height:1.8}.intro p{margin-bottom:22px}.small-links{display:flex;gap:23px;flex-wrap:wrap;font-size:15px;margin-top:20px}
+.section{margin-top:62px;padding-top:26px;border-top:1px solid var(--line)}.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:28px}.section-note{font-size:14px;color:var(--muted);margin:0}.research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px}.research-grid h3{font-size:22px;line-height:1.35;margin:0 0 10px}.research-grid p{font-size:16px;color:var(--muted)}.research-grid a{font-size:14px}.research-approach,.people-intro{max-width:810px;color:var(--muted);font-size:16px;margin:0 0 28px}
+.people-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 48px}.person h3{font-size:25px;line-height:1.3;margin:0 0 4px}.person .role{color:var(--blue);font-size:14px;margin:0 0 12px}.person p{font-size:16px;max-width:430px}.person-links,.paper-links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}.person-links:empty,.paper-links:empty{display:none}
+.publication-group{margin-top:44px}.publication-group h3{font:600 15px/1.5 system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--blue);margin:0}.papers{list-style:none;margin:0;padding:0}.papers>li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:0 0 26px;margin-bottom:25px;border-bottom:1px solid #e9edf2}.papers>li:last-child{margin-bottom:0}.paper-year{font-size:15px;color:var(--muted);padding-top:2px;font-variant-numeric:tabular-nums}.papers h4{font-size:23px;line-height:1.35;margin:0 0 7px;letter-spacing:-.012em}.authors{font-size:15px;margin:0 0 3px}.venue{font-size:15px;color:var(--muted);margin:0 0 2px}.work-type{font-size:13px;color:var(--muted);margin:0 0 7px}.contact{display:grid;grid-template-columns:1fr 2fr;gap:30px}.legal-record{margin-top:28px;padding:20px 22px;border:1px solid var(--line);border-left:3px solid var(--blue);max-width:810px}.legal-record strong,.acknowledgements strong{display:block;font:600 15px/1.5 system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}.legal-record p{margin:0 0 7px;font-size:15px;color:var(--muted)}.legal-record .legal-meta{font-size:13px}.legal-record a,.acknowledgements a{font-size:14px}.acknowledgements{margin-top:18px;padding:20px 22px;background:#f6f8fb;max-width:810px}.acknowledgements p{margin:0 0 10px;font-size:15px;color:var(--muted)}.ack-links{display:flex;gap:18px;flex-wrap:wrap}.contact p{font-size:16px}.contact a{overflow-wrap:anywhere}.contact .small{font-size:14px;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:35px}.footer-inner{padding-top:22px;padding-bottom:28px;display:flex;justify-content:space-between;gap:20px;font-size:13px;color:var(--muted)}
+.works-nav{display:flex;gap:12px 24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin:24px 0 0;font-size:14px;line-height:1.5}.works-nav span{color:var(--muted);font-size:12px;margin-left:3px}.group-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:7px}.group-heading>a{font-size:12px;white-space:nowrap;text-decoration:none;color:var(--muted)}.group-note{font-size:14px;color:var(--muted);margin:0 0 25px}.work-summary{max-width:740px;font-size:15px;color:var(--muted);margin:7px 0 12px}.abstract{font-size:14px;margin-top:10px;color:var(--muted);max-width:760px}.abstract summary{cursor:pointer;color:var(--blue);width:fit-content}.abstract p{margin:9px 0 0;line-height:1.7}.related{list-style:none;padding:0;margin:13px 0 0;font-size:13px;line-height:1.6;color:var(--muted)}.related li+li{margin-top:4px}.related span{color:var(--ink)}.series{padding-left:19px;margin:12px 0 0;font-size:15px}.series li{padding-left:3px;margin-top:7px}.series span{color:var(--muted)}
+.research-label{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);margin-bottom:15px}.mathematical-work{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 40px}.mathematical-work article{border-left:2px solid var(--line);padding-left:23px}.mathematical-work h3{font-size:23px;line-height:1.35;margin:0 0 10px}.mathematical-work p{font-size:16px;color:var(--muted)}.mathematical-work .math-method{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:9px}.mathematical-work .math-venue{font-size:13px}.mathematical-work a{font-size:14px}
+@media(max-width:700px){.mathematical-work{grid-template-columns:1fr;gap:25px}.mathematical-work article{padding-left:16px}.wrap{padding-left:23px;padding-right:23px}.masthead{align-items:flex-start;flex-direction:column;gap:20px}nav{gap:18px}main.wrap{padding-top:36px}.intro{font-size:17px}.research-grid,.people-grid,.contact{grid-template-columns:1fr}.research-grid{gap:18px}.section{margin-top:42px}.section-title{display:block}.section-note{margin-top:8px}.papers>li{grid-template-columns:42px minmax(0,1fr);gap:10px}.papers h4{font-size:21px}.paper-year{font-size:13px;overflow-wrap:anywhere}.group-heading{align-items:flex-start}.group-heading h3{max-width:75%}.works-nav{display:grid;grid-template-columns:1fr;gap:10px}.footer-inner{flex-direction:column;gap:5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header{border-top:0}nav,.small-links{display:none}.wrap{max-width:none;padding:0}body{font-size:11pt}.section{margin-top:24px;break-inside:avoid}.papers>li,.person{break-inside:avoid}a{color:inherit}footer{margin-top:20px}}
+</style><link rel="stylesheet" href="agentic-risk.css?v=20261102"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Foundations for Agentic Risk, Actuarial Science, and Insurance", "url": "https://agentnorm.tech/agentic-risk-insurance.html", "description": "Decision theory under uncertainty connects AI evaluation, actuarial loss modeling, insurance pricing, and collective safety finance. Research and results from the v12 AI insurance draft.", "dateModified": "2026-11-02", "citation": {"@type": "CreativeWork", "name": "Tail-Risk Pricing and Collective AI Safety: Insurance under Dependence Ambiguity", "url": "https://agentnorm.tech/tail-risk-pricing-ai-insurance-v12.pdf", "version": "12", "dateCreated": "2026-11-01", "genre": "Research draft"}}</script></head>
+<body class="risk-page risk-agentnorm"><a class="skip" href="#main">Skip to content</a><header><div class="wrap masthead risk-header"><a class="wordmark" href="index.html">AgentNorm<small>Independent research in the public interest</small></a><nav aria-label="Main navigation"><a href="index.html#research">Research</a><a href="agentic-risk-insurance.html" aria-current="page">Risk &amp; insurance</a><a href="shuo-li-liu.html">Research profile</a><a href="index.html#works">Publications</a></nav></div></header>
+<main id="main" class="wrap risk-main"><div class="risk-hero"><p class="risk-kicker">RESEARCH PROGRAMME · DECISION THEORY UNDER UNCERTAINTY</p><h1>Foundations for Agentic Risk, Actuarial Science, and Insurance</h1><p class="risk-deck">AgentNorm studies the foundations of decisions under uncertainty. This programme, developed through Shuo Li Liu’s research, connects evidence about agentic systems to actuarial loss models, insurance prices, and the financing of shared safety.</p></div>
+<nav class="risk-toc" aria-label="On this page"><a href="#foundations">Foundations</a><a href="#paper">Paper</a><a href="#results">Results</a><a href="#illustration">Example</a><a href="#scope">Scope</a><a href="#agenda">Research programme</a></nav>
+
+<section class="risk-section" id="foundations" aria-labelledby="foundations-title">
+  <h2 id="foundations-title">From evaluation to insurance</h2>
+  <div class="risk-prose">
+    <p>AI evaluations provide evidence about a system in a particular setting. Insurance requires a further account of what can be lost, which losses a contract covers, and how claims may arrive together. A shared model, update, tool, or service can expose many users to the same failure.</p>
+    <p>Decision theory under uncertainty supplies a foundation for this transition: state the admissible loss models, the evidence supporting them, and the preferences or constraints governing a decision. Knightian uncertainty enters when the evidence supports several probability models without identifying one trusted law.</p>
+    <dl class="risk-foundations">
+      <div><dt>Agentic risk</dt><dd>Which failures can arise across actions, environments, and shared dependencies? What connects evaluation evidence to deployment?</dd></div>
+      <div><dt>Actuarial science</dt><dd>How do those failures translate into covered loss frequency, severity, dependence, and aggregate exposure?</dd></div>
+      <div><dt>Insurance economics</dt><dd>How do premiums and contract terms affect participation, prevention incentives, and the funding of shared safety?</dd></div>
+    </dl>
+    <p>This programme connects those questions through explicit assumptions. Its current insurance paper develops a theoretical model of dependence, pricing, and collective funding.</p>
+  </div>
+</section>
+
+<section class="risk-section" id="paper" aria-labelledby="paper-title">
+  <h2 id="paper-title">The AI insurance paper</h2>
+  <div class="risk-prose">
+    <p class="risk-status">Research draft · version 12 · 1 November 2026</p>
+    <h3 class="risk-paper-title">Tail-Risk Pricing and Collective AI Safety: Insurance under Dependence Ambiguity</h3>
+    <p>Can greater concern about catastrophic AI losses weaken the insurance incentives for collective safety? The paper holds individual loss frequencies fixed and varies dependence, the uncertainty surrounding it, and the insurer’s treatment of tail losses.</p>
+    <p>In the benchmark, losses either diversify across a large pool or arise through a common regime. Its probability is known only to lie within an interval. Insurers price a bounded liability using a worst-case mean–expected-shortfall criterion; customers decide whether coverage is worth its price.</p>
+    <a class="risk-download" href="tail-risk-pricing-ai-insurance-v12.pdf">Read the paper <span aria-hidden="true">↗</span><span class="risk-file">PDF · 55 pages</span></a>
+  </div>
+</section>
+
+<section class="risk-section" id="results" aria-labelledby="results-title">
+  <h2 id="results-title">Main results</h2>
+  <div class="risk-prose risk-results">
+    <article>
+      <p class="risk-result-number">01 / Demand</p>
+      <h3>A larger saving per policy can generate less total value.</h3>
+      <p>Putting more weight on a fixed tail statistic increases the premium saving from a control on each insured exposure. It also makes insurance more expensive. If coverage contracts enough, the control’s total insurance-market value falls. The continuous-demand model allows this reversal while both the original and improved markets remain active.</p>
+      <p class="risk-source">Propositions 5–6 · §§5.1–5.2</p>
+    </article>
+    <article>
+      <p class="risk-result-number">02 / Tail focus</p>
+      <h3>Extreme-tail pricing can stop distinguishing a risk reduction.</h3>
+      <p>Increasing the expected-shortfall confidence level changes which losses the price criterion distinguishes. For bounded loss models with a common mean, if a control lowers robust expected shortfall but leaves the same largest admitted payout possible, its market value tends to zero as the assessed tail becomes extreme. Under the stated demand condition, insurance remains active throughout.</p>
+      <p class="risk-source">Proposition 7 · §5.4</p>
+    </article>
+    <article>
+      <p class="risk-result-number">03 / Investment</p>
+      <h3>Optimal safety effort can rise, then drop to zero.</h3>
+      <p>In the common-regime model, suppose every finite effort leaves positive residual common risk and effort costs grow without bound. Sufficiently extreme tail focus then makes zero effort optimal for collective insurance-market surplus. With exponential risk reduction and linear cost, optimal positive effort rises as the tail narrows, then is abandoned when cost exhausts its gain.</p>
+      <p>Eliminating common risk at a sufficiently low finite cost is a countercase. The result concerns the insurance channel; it does not value uninsured harm or establish a decentralized investment equilibrium.</p>
+      <p class="risk-source">Propositions 8–9 · §5.6</p>
+    </article>
+    <article>
+      <p class="risk-result-number">04 / Funding</p>
+      <h3>A valuable control need not fund itself.</h3>
+      <p>With publicly known benefits, sequential commitments and credible cancellation can fund a beneficial intervention. With private benefits, the paper derives an exact funding bound under dominant-strategy truthfulness, voluntary participation relative to no project, and efficient project selection at every type profile.</p>
+      <p>Bundling insurance and project payments does not remove that bound if both allocations must remain efficient. A self-financing unanimity rule is possible, but can reject projects with positive aggregate gains.</p>
+      <p class="risk-source">Propositions 3, 10–12 · §§4, 6</p>
+    </article>
+  </div>
+</section>
+
+<section class="risk-section" id="illustration" aria-labelledby="illustration-title">
+  <h2 id="illustration-title">A constructed example</h2>
+  <div class="risk-prose">
+    <p>Section 10 illustrates how the same control can cover its cost at one tail-risk weight and fail to do so at another. These are model calculations in normalized units, not market estimates.</p>
+    <div class="risk-table-scroll" tabindex="0" role="region" aria-label="Illustrative insurance prices and collective gains">
+      <table>
+        <caption>Same control, different weight on tail risk</caption>
+        <thead><tr><th scope="col">Tail weight λ</th><th scope="col">Original quote</th><th scope="col">Improved quote</th><th scope="col">Total market gain</th><th scope="col">Control cost</th></tr></thead>
+        <tbody><tr><th scope="row">0.15</th><td>0.1670</td><td>0.0788</td><td><strong>6.12</strong></td><td>3.00</td></tr>
+        <tr><th scope="row">0.30</th><td>0.3140</td><td>0.1376</td><td><strong>0.24</strong></td><td>3.00</td></tr></tbody>
+      </table>
+    </div>
+    <p class="risk-note">Parameters: marginal loss frequency p = 0.02; expected-shortfall confidence α = 0.99; dependence bound reduced from 0.90 to 0.20; 100 associations, each with willingness to pay 0.14. One unit is the maximum insured loss per unit exposure mass. At both displayed weights, the original quote exceeds willingness to pay; the improved market is active.</p>
+    <p>At λ = 0.15, each association gains 0.0612. Contributions of 0.03 each cover the cost of 3 and leave a positive gain for every participant. At λ = 0.30, aggregate gains of 0.24 cannot cover that same cost.</p>
+  </div>
+</section>
+
+<section class="risk-section" id="scope" aria-labelledby="scope-title">
+  <h2 id="scope-title">What the results establish</h2>
+  <div class="risk-prose">
+    <p>The analysis separates <strong>risk reduction, generated market value, its distribution, and the amount a mechanism can collect</strong>. These quantities need not move together. Wider dependence ambiguity can also reduce the value of a fixed physical intervention without changing the true initial risk.</p>
+    <p>The model prices a specified, bounded insured layer. Its premiums compensate stipulated risk-bearing preferences; they are not actuarially fair expected-loss prices or statutory capital requirements. Bounded coverage does not imply bounded total harm. The results do not measure the total social value of AI safety or establish a general case against prudent underwriting.</p>
+    <p>Appendices examine finite pools, provider pricing, and the distribution of gains. In particular, taking a large-pool limit before an extreme-tail limit can change the answer. Proofs are accompanied by numerical checks described in the manuscript; those checks are not empirical calibration.</p>
+  </div>
+</section>
+
+<section class="risk-section" id="agenda" aria-labelledby="agenda-title">
+  <h2 id="agenda-title">Research programme</h2>
+  <div class="risk-prose">
+    <p>The next questions concern the evidence and institutions needed to use this foundation in practice:</p>
+    <ul class="risk-agenda">
+      <li><strong>Evidence and admissible models.</strong> Determine when evaluation results justify narrowing a loss-model set, and which deployment assumptions remain necessary.</li>
+      <li><strong>Shared exposure.</strong> Map model versions, tools, and common services to joint insured losses. Group observations by failure episode rather than treating every affected user as an independent event.</li>
+      <li><strong>Contracts and incentives.</strong> Study how limits, exclusions, monitoring, and verifiable controls affect insurance demand and the financing of prevention.</li>
+      <li><strong>Preference alignment.</strong> Examine whose losses and preferences a risk criterion represents, and how collective decisions account for heterogeneous interests.</li>
+    </ul>
+    <p>These are research directions. Estimating premiums or control effectiveness requires contract definitions, exposure data, verifiable interventions, and evidence about willingness to pay.</p>
+    <p class="risk-related">Related work: <a href="https://openreview.net/forum?id=L89pUs9uQP">Behavior-Only Deployment Certification Requires Bridge Assumptions</a> and <a href="https://openreview.net/forum?id=ydSgbL5xvC">Model Collapse Despite Ground-Truth Verification</a>.</p>
+  </div>
+</section>
+<div class="risk-contact">For research collaboration: <a href="mailto:admin@agentnorm.tech">admin@agentnorm.tech</a><p>Page updated 2 November 2026.</p></div></main><footer class="risk-footer"><div class="wrap footer-inner"><span>© 2026 AgentNorm</span><a href="https://sl6928.mycpanel.princeton.edu/agentic-risk-insurance.html">Shuo Li Liu’s personal research page ↗</a></div></footer></body></html>

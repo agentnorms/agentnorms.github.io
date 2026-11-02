@@ -17,3 +17,7 @@ This directory contains public website files only. Private correspondence, sourc
 Legal identity: AgentNorm is the public research identity of NORMATIVE AI INSTITUTE INC., a British Columbia corporation (company no. 1449218). See the [OrgBook BC company profile](https://orgbook.gov.bc.ca/entity/BC1449218/type/registration.registries.ca). This corporate record does not by itself establish charitable or nonprofit registration.
 
 Grant acknowledgement: We gratefully acknowledge a $20,000 grant from the [Corrigibility Research Fund](https://corrigibilityresearch.org/) supporting CAST Decision Theory by Xuanyi Wang and Shuo Li Liu. The fund is a program of Lightcone Infrastructure Inc.; applications are coordinated through [Lightcone Commons](https://www.lightconecommons.com/).
+
+## Agentic risk and insurance research
+
+The [research page](agentic-risk-insurance.html) introduces the v12 AI insurance research draft, its conditional theoretical results, and clearly labeled numerical illustrations. The PDF is a research draft dated 1 November 2026. The page makes no empirical pricing, regulatory-capital, or peer-reviewed-publication claim.
